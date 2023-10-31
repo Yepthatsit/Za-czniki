@@ -1,8 +1,10 @@
+# import wymaganych bibliotek.
 import pandas as pd
 import math
 import matplotlib.pyplot as plt
 import numpy as np
 import statsmodels.api as sm
+##################################3
 excel_dada = pd.read_excel("lab3_cw13.xlsx")
 D = 0.039
 l = 0.8
