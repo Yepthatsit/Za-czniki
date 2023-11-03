@@ -9,7 +9,7 @@ uI = (klasaAmp*zakresAmp)/100
 t = 30*60 #czas elektrolizy[s]
 ut = 0.2 #niepewność pomiaru czasu
 tustI = 20# czas do ustawienia natężenia [s]
-ZCu = 2 #masa mollowa miedzi
+ZCu = 2 #st utlenienia jonu miedzi
 
 
 #odczyt danych z excela
@@ -74,7 +74,7 @@ print()
 #wyznaczanie masy miedzi wydzielonej na katodzie oraz jej niepewności
 mwydz = srmkatodypo - srmkatprzed
 mwydzerr = mkatprzederror + mkatodypoerror
-mmolCu = 63.546
+mmolCu = 63.546 # masa mollowa miedzi
 print(f'wydzielona masa na katodzie wynosi {mwydz} +/- {mwydzerr}')#część miedzi pływała na CuSO4
 print()
 
