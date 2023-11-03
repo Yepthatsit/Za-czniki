@@ -71,7 +71,7 @@ m2anodypobperror = math.sqrt(m2anodypobp.std()**2 + 0.001**2/3)
 print(f'Zmierzone masy 2 anody po bez pyłu: {m2anodypobp} obliczona wartość średnia {srm2anodypobp} +/- {m2anodypobperror} (sqrt({m2anodypobp.std()}^2 + 0.001^2))')
 print()
 
-#wyznaczanie stałej K oraz jej niepewności
+#wyznaczanie masy miedzi wydzielonej na katodzie oraz jej niepewności
 mwydz = srmkatodypo - srmkatprzed
 mwydzerr = mkatprzederror + mkatodypoerror
 mmolCu = 63.546
