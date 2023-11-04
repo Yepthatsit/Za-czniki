@@ -28,8 +28,9 @@ print("I wyznaczone geometrycznie " + str(igeompierscien))
 print("wyznaczone I metodą wahadła " + str(Iwahpierscien))
 print(stats.ttest_1samp(list(Iwahpierscien), igeompierscien)) #(TtestResult(statistic=22.31420225105308, pvalue=3.449912643778628e-09, df=9))
 
+print()
 # prezentacja wyników dla pierścienia oraz przeprowadzenie testu statystycznego
 print("prety")
-print("I wyznaczone geometrycznie " + str(igeompierscien))
-print("wyznaczone I metodą wahadła " + str(Iwahpierscien))
-print(stats.ttest_1samp(list(Iwahpret), Igeompret)) #(TtestResult(statistic=-2.52863147255375, pvalue=0.03230783612645825, df=9))
+print("I wyznaczone geometrycznie " + str(Igeompret))
+print("wyznaczone I metodą wahadła " + str(Iwahpret))
+print(stats.ttest_1samp(list(Iwahpret), Igeompret))
