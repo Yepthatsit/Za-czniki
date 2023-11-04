@@ -129,3 +129,35 @@ Ufabp = math.sqrt(UIabp + Umabp + Utabp)
 print(f'Uf = sqrt({UIabp + Umabp + Utabp})')   
 print(f'wyznaczona stała F wynosi: {Fabp} +/- {Ufabp}')
 print()
+
+#wynik działania programu
+'''
+Zmierzone masy katody przed: [124.6 124.6 124.59] obliczona wartość średnia 124.59666666666665 +/- 0.004749268949587413 (sqrt(0.004714045207906029^2 + 0.001^2/3))
+
+Zmierzone masy 1 anody przed: [141.878 141.88 141.878] obliczona wartość średnia 141.87866666666665 +/- 0.0011055415967889724 (sqrt(0.0009428090415865652^2 + 0.001^2/3))
+Zmierzone masy 2 anody przed: [136.506 136.509 136.504] obliczona wartość średnia 136.50633333333334 +/- 0.0021343747458085587 (sqrt(0.002054804667653842^2 + 0.001^2/3))
+
+Zmierzone masy katody po: [124.778 124.784 124.783] obliczona wartość średnia 124.78166666666668 +/-0.0026874192494321636 (sqrt(0.0026246692913365678^2 + 0.001^2/3))
+
+Zmierzone masy 1 anody po z pyłem: [141.742 141.743 141.742] obliczona wartość średnia 141.74233333333333 +/- 0.0007453559925013534 (sqrt(0.00047140452079328255^2 + 0.001^2/3))
+Zmierzone masy 2 anody po z pyłem: [136.377 136.381 136.376] obliczona wartość średnia 136.37800000000001 +/- 0.0022360679774970442 (sqrt(0.002160246899466445^2 + 0.001^2/3))
+
+Zmierzone masy 1 anody po bez pyłu: [141.735 141.735 141.731] obliczona wartość średnia 141.73366666666666 +/- 0.0007453559925013534 (sqrt(0.0018856180831731304^2 + 0.001^2/3))
+Zmierzone masy 2 anody po bez pyłu: [136.375 136.371 136.376] obliczona wartość średnia 136.374 +/- 0.0022360679774970442 (sqrt(0.002160246899466445^2 + 0.001^2/3))
+
+wydzielona masa na katodzie wynosi 0.1850000000000307 +/- 0.007436688199019577
+
+
+różnica mas anod po usunięciu proszku wynosi: 0.2773333333333312 +/- 0.006221340312595929
+
+różnica mas anod przed usunięciem proszku wynosi: 0.26466666666664196 +/- 0.006221340312595929
+
+Uf = sqrt(38621413.66841385)
+wyznaczona stała F wynosi: 154571.35135132572 +/- 6214.612913803549
+
+Uf = sqrt(6456898.744744739)
+wyznaczona stała F wynosi: 108044.20654912847 +/- 2541.0428459088876
+
+Uf = sqrt(5356201.594680485)
+wyznaczona stała F wynosi: 103109.49519230849 +/- 2314.3469045673523
+'''
