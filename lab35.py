@@ -106,7 +106,7 @@ UI = ((t*mmolCu)*uI/(ZCu*mwydz))**2
 Ut = ((I*mmolCu)*ut/(ZCu*mwydz))**2
 Um = ((I*t*mmolCu)*mwydzerr/(ZCu*mwydz**2))**2
 Uf = math.sqrt(UI + Um + Ut)
-print(f'Uf = sqrt({UI + Um + Ut})')  
+print(f'Uf = sqrt({UI} + {Um} + {Ut})')  
 print(f'wyznaczona stała F wynosi: {F} +/- {Uf}')
 print()
 
@@ -116,7 +116,7 @@ UIazp = ((t*mmolCu)*uI/(ZCu*deltamzp))**2
 Utazp = ((I*mmolCu)*ut/(ZCu*deltamzp))**2
 Umazp = ((I*t*mmolCu)*deltamzperr/(ZCu*deltamzp**2))**2
 Ufazp = math.sqrt(UIazp + Umazp + Utazp) 
-print(f'Uf = sqrt({UIazp + Umazp + Utazp})')   
+print(f'Uf = sqrt({UIazp} + {Umazp} + {Utazp})')   
 print(f'wyznaczona stała F wynosi: {Fazp} +/- {Ufazp}')
 print()
 
@@ -126,7 +126,7 @@ UIabp = ((t*mmolCu)*uI/(ZCu*deltambp))**2
 Utabp = ((I*mmolCu)*ut/(ZCu*deltambp))**2
 Umabp = ((I*t*mmolCu)*deltambperr/(ZCu*deltambp**2))**2
 Ufabp = math.sqrt(UIabp + Umabp + Utabp) 
-print(f'Uf = sqrt({UIabp + Umabp + Utabp})')   
+print(f'Uf = sqrt({UIabp} + {Umabp} + {Utabp})')   
 print(f'wyznaczona stała F wynosi: {Fabp} +/- {Ufabp}')
 print()
 
@@ -152,12 +152,12 @@ różnica mas anod po usunięciu proszku wynosi: 0.2773333333333312 +/- 0.006221
 
 różnica mas anod przed usunięciem proszku wynosi: 0.26466666666664196 +/- 0.006221340312595929
 
-Uf = sqrt(38621413.66841385)
+Uf = sqrt(13439.42024544843 + 38607679.28146891 + 294.96669948858)
 wyznaczona stała F wynosi: 154571.35135132572 +/- 6214.612913803549
 
-Uf = sqrt(6456898.744744739)
+Uf = sqrt(6566.372194967291 + 6450188.254641514 + 144.11790825716963)
 wyznaczona stała F wynosi: 108044.20654912847 +/- 2541.0428459088876
 
-Uf = sqrt(5356201.594680485)
+Uf = sqrt(5980.256999332137 + 5350090.083755242 + 131.25392591126774)
 wyznaczona stała F wynosi: 103109.49519230849 +/- 2314.3469045673523
 '''
