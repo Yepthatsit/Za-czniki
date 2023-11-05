@@ -24,13 +24,15 @@ igeompierscien = (1/2)*mpierscien*(0.1459**2+0.1303**2) + mpret*apierscien**2
 
 # prezentacja wyników dla pierścienia oraz przeprowadzenie testu statystycznego
 print("peirscienie")
-print("I wyznaczone geometrycznie " + str(igeompierscien))
-print("wyznaczone I metodą wahadła " + str(Iwahpierscien))
+print(f"I wyznaczone geometrycznie {igeompierscien:.3f}" )
+a = [ round(num, 3) for num in Iwahpierscien] 
+print(f"wyznaczone I metodą wahadła {a}" )
 print(stats.ttest_1samp(list(Iwahpierscien), igeompierscien)) #(TtestResult(statistic=22.31420225105308, pvalue=3.449912643778628e-09, df=9))
 
 print()
-# prezentacja wyników dla pierścienia oraz przeprowadzenie testu statystycznego
+# prezentacja wyników dla pręta oraz przeprowadzenie testu statystycznego
 print("prety")
-print("I wyznaczone geometrycznie " + str(Igeompret))
-print("wyznaczone I metodą wahadła " + str(Iwahpret))
+print(f"I wyznaczone geometrycznie {Igeompret:.3f}")
+b =[ round(num,3) for num in Iwahpret]
+print(f"wyznaczone I metodą wahadła {b}")
 print(stats.ttest_1samp(list(Iwahpret), Igeompret))
