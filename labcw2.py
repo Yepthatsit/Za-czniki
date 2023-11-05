@@ -10,7 +10,7 @@ okrpierscien = np.array(dane[11:21]["Unnamed: 9"])# -||- dla wahadła z pierści
 
 # deklaracja zmierzonych wielkości dla prętu oraz pierścienia
 apret = 0.2713
-apierscien = 0.1451
+apierscien = 0.13885
 mpret = 0.6490
 mpierscien = 1.4270
 
@@ -20,7 +20,7 @@ Iwahpret = (okrpret**2*mpret*9.81*apret)/(4*math.pi**2)
 
 # momentamy bezwładności wyznaczone metodą geometryczną dla obu brył
 Igeompret = 0.0773
-igeompierscien = (1/2)*mpierscien*(0.1459**2+0.1303**2) + mpierscien*apierscien**2
+igeompierscien = (1/2)*mpierscien*(0.1459**2+0.13035**2) + mpierscien*apierscien**2
 
 # prezentacja wyników dla pierścienia oraz przeprowadzenie testu statystycznego
 print("peirscienie")
