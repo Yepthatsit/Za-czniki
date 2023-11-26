@@ -18,7 +18,7 @@ ut0 = math.sqrt(pom100.std()**2 + 0.2)/3
 okr1 = (okresy-t0)/t0
 uokr1 = []
 for i in okresy:# obliczanie niepewności okresów widocznych na wykresie
-    uokr1.append(math.sqrt(( (i/(t0**2)*0.2/50)**2 + 1/t0*0.2/50)**2))
+    uokr1.append(math.sqrt(( (i/(t0**2)*ut0)**2 + 1/t0*0.2/50)**2))
 # wyznaczanie parametrów jrzywej teoretycznej
 katytor = np.linspace(5*(2*math.pi/360),60*(2*math.pi/360))
 Tteor = ((1/16)*(katytor**2))
