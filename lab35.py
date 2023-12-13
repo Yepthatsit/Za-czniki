@@ -2,11 +2,11 @@ import numpy as np
 import pandas as pd
 import math
 #defnicja stałych
-I = 0.5# natężenie[A]
+I = 0.6# natężenie[A]
 klasaAmp = 0.5 #klasa amperomierza
 zakresAmp = 75* 0.001
 uI = (klasaAmp*zakresAmp)/100
-t = 30*60 #czas elektrolizy[s]
+t = 43*60 #czas elektrolizy[s]
 ut = 0.2 #niepewność pomiaru czasu
 tustI = 20# czas do ustawienia natężenia [s]
 ZCu = 2 #st utlenienia jonu miedzi
