@@ -1,0 +1,22 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+data = pd.read_excel("lab7_cw31.xlsx")
+cond  = np.array(data.loc[4:26,'suwmiara':'Unnamed: 19'].fillna(np.nan))
+print(data)
+grad = np.array(np.gradient(cond))
+x, y  = np.meshgrid(np.arange(grad[1].shape[1]), np.arange(grad[1].shape[0]))
+fig1 = plt.figure()
+plot1 = fig1.add_subplot(1,1,1)
+plot1.scatter(x,y,c='r',s=0.1)
+#plot1.contour(cond)
+plot1.quiver(x.flatten(),y.flatten(),grad[1],grad[0],cond)
+cyldcon = data.loc[2:9,'pocz':'kon'].fillna(np.nan)
+field = np.gradient(cyldcon)
+print(cyldcon)
+fig2 = plt.figure()
+plot2 = fig2.add_subplot(1,1,1,polar = True)
+print(field)
+x1, y1  = np.meshgrid(np.arange(0,2*np.pi,2*np.pi/field[0].shape[1]), np.arange(field[0].shape[0]))
+plot2.quiver(x1,y1,field[0]*np.cos(x1)-field[1]*np.sin(x1),field[0]*np.sin(x1)+field[1]*np.cos(x1))
+plt.show()
